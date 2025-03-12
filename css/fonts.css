@@ -1,1 +1,191 @@
-.meow-script-regular{font-family:"Meow Script",serif;font-weight:400;font-style:normal}.sacramento-regular{font-family:Sacramento,serif;font-weight:400;font-style:normal}@font-face{font-family:Alro;src:url('../font/AlroBold.woff2') format('woff2'),url('../font/AlroBold.woff') format('woff');font-weight:700;font-style:normal;font-display:swap}@font-face{font-family:Alro;src:url('../font/AlroRegular.woff2') format('woff2'),url('../font/AlroRegular.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}.title-text{font-family:Alro;font-weight:700;font-size:80px}.regular-text{font-family:Alro;font-weight:400;font-size:20px}.neon-text{text-shadow:0 0 5px var(--neon-text-color-1),0 0 15px var(--neon-text-color-1),0 0 20px var(--neon-text-color-1),0 0 40px var(--neon-text-color-1),0 0 60px var(--neon-text-color-2),0 0 10px var(--neon-text-color-3),0 0 98px var(--neon-text-color-2);color:var(--neon-text-color-4);text-align:center;animation:12s infinite blink;-webkit-animation:12s infinite blink;font-family:"Meow Script",serif;font-weight:400;font-style:normal;font-size:80px}.about-me-neon-text,.main-page-neon-text{position:absolute;transform:rotate(-10deg);font-size:100px}@-webkit-keyframes blink{20%,24%,55%{color:#111;text-shadow:none}0%,100%,19%,21%,23%,25%,54%,56%{text-shadow:0 0 5px var(--neon-text-color-1),0 0 15px var(--neon-text-color-1),0 0 20px var(--neon-text-color-1),0 0 40px var(--neon-text-color-1),0 0 60px var(--neon-text-color-2),0 0 10px var(--neon-text-color-3),0 0 98px var(--neon-text-color-2);color:var(--neon-text-color-4)}}@keyframes blink{20%,24%,55%{color:#111;text-shadow:none}0%,100%,19%,21%,23%,25%,54%,56%{text-shadow:0 0 5px var(--neon-text-color-1),0 0 15px var(--neon-text-color-1),0 0 20px var(--neon-text-color-1),0 0 40px var(--neon-text-color-1),0 0 60px var(--neon-text-color-2),0 0 10px var(--neon-text-color-3),0 0 98px var(--neon-text-color-2);color:var(--neon-text-color-4)}}.about-me-neon-text{top:230px;left:20vw}.main-page-neon-text{top:25vh}@media (max-width:700px){.neon-text{font-size:calc(3.125rem + ((1vw - 2.5px) * 11.1111));margin-right:30px}.title-text{font-size:calc(1.875rem + ((1vw - 2.5px) * 11.1111))}.regular-text{font-size:calc(.9375rem + ((1vw - 2.5px) * 1.1111))}.about-me-neon-text{top:calc(6.25rem + ((1vw - 2.5px) * 28.8889));left:15vw}.main-page-neon-text{margin-right:90px}}
+.meow-script-regular {
+  font-family: "Meow Script", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sacramento-regular {
+  font-family: "Sacramento", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alro';
+  src: url('../font/AlroBold.woff2') format('woff2'),
+      
+      url('../font/AlroBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alro';
+  src: url('../font/AlroRegular.woff2') format('woff2'),
+      url('../font/AlroRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
+
+/* STYLE */
+
+
+.title-text{
+  font-family: 'Alro';
+  font-weight: bold;
+  font-size: 80px;
+}
+
+.regular-text{
+  font-family: 'Alro';
+  font-weight: normal;
+  font-size: 20px;
+}
+
+
+
+/* NEON TEXT */
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+.neon-text {
+  text-shadow: 
+    0 0 5px var(--neon-text-color-1),
+    0 0 15px var(--neon-text-color-1), 
+    0 0 20px var(--neon-text-color-1),
+    0 0 40px var(--neon-text-color-1),
+    0 0 60px var(--neon-text-color-2),
+    0 0 10px var(--neon-text-color-3),
+    0 0 98px var(--neon-text-color-2);
+    color: var(--neon-text-color-4);
+  
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+  font-family: "Meow Script", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+}
+
+
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 
+      0 0 5px var(--neon-text-color-1),
+      0 0 15px var(--neon-text-color-1), 
+      0 0 20px var(--neon-text-color-1),
+      0 0 40px var(--neon-text-color-1),
+      0 0 60px var(--neon-text-color-2),
+      0 0 10px var(--neon-text-color-3),
+      0 0 98px var(--neon-text-color-2);
+      color: var(--neon-text-color-4);
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 
+    0 0 5px var(--neon-text-color-1),
+    0 0 15px var(--neon-text-color-1), 
+    0 0 20px var(--neon-text-color-1),
+    0 0 40px var(--neon-text-color-1),
+    0 0 60px var(--neon-text-color-2),
+    0 0 10px var(--neon-text-color-3),
+    0 0 98px var(--neon-text-color-2);
+    color: var(--neon-text-color-4);
+  }
+}
+
+
+.about-me-neon-text{
+  position: absolute;
+  top: 230px;
+  left: 20vw;
+  transform: rotate(-10deg);
+  font-size: 100px;
+}
+
+.main-page-neon-text{
+  position: absolute;
+  top: 25vh;
+  transform: rotate(-10deg);
+  font-size: 100px;
+}
+
+
+
+@media (max-width: 700px){
+  .neon-text{
+    font-size: calc(3.125rem + ((1vw - 2.5px) * 11.1111));
+    margin-right: 30px;
+  }
+  .title-text{font-size: calc(1.875rem + ((1vw - 2.5px) * 11.1111));}
+  .regular-text{font-size: calc(0.9375rem + ((1vw - 2.5px) * 1.1111));}
+
+  .about-me-neon-text{
+    top: calc(6.25rem + ((1vw - 2.5px) * 28.8889));
+    left: 15vw;
+  }
+
+  .main-page-neon-text{
+    margin-right: 90px;
+    top: 25vh;
+  }
+  
+}
+
+
+
+@media (max-width: 390px){
+  .main-page-neon-text{
+    top: 10vh;
+  }
+
+  .about-me-neon-text{
+    top: 5vh;
+  }
+}
+
+
