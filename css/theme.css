@@ -8,6 +8,8 @@
     --text-color: #ffffff;
     --text-link-underline: #ffffff;
 
+    --text-border: none;
+
     --neon-text-color-1: #ffa500;
     --neon-text-color-2: #ff0000;
     --neon-text-color-3: #ff8d00;
@@ -27,6 +29,8 @@ html.dark-theme {
     --background-color-second: #ffffff;
     --background-gradient: linear-gradient(0deg, rgba(255,255,255,0.9863108573507529) 16%, rgba(255,255,255,0) 37%);
     --background-gradient-bottom: #ffffff;
+
+    --text-border: #ffffff;;
 
     --text-color: #111111;
     --text-link-underline: #111111;

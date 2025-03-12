@@ -155,7 +155,13 @@
 }
 
 
+@media (max-width: 1000px) {
+  .main-page-neon-text{
+    top: calc(25vh - (10 * (1000px - 100vw) / 740));
 
+  }
+  
+}
 @media (max-width: 700px){
   .neon-text{
     font-size: calc(3.125rem + ((1vw - 2.5px) * 11.1111));
@@ -169,23 +175,18 @@
     left: 15vw;
   }
 
-  .main-page-neon-text{
-    margin-right: 90px;
-    top: 25vh;
-  }
   
 }
 
 
-
-@media (max-width: 390px){
+@media (max-width: 314px){
   .main-page-neon-text{
-    top: 10vh;
-  }
+    left: 10px;
 
-  .about-me-neon-text{
-    top: 5vh;
   }
 }
+
+
+
 
 

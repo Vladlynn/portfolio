@@ -19,6 +19,10 @@ body {
     color: var(--text-color);
 }
 
+.title-text{
+    -webkit-text-stroke: 1px var(--text-border);
+}
+
 .light-mode{
     z-index: 2;
 }
@@ -278,10 +282,21 @@ nav{
     display: flex;
     height: 120px;
 } 
+.regular-text-glass{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 15px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
 
 .hello-text p{
     margin-top: 15px;
     max-width: 500px;
+    
 }
 
 .light-mode{
@@ -696,8 +711,8 @@ svg path {
     background-color: var(--text-color);
     border: none;
     cursor: pointer;
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-top: 60px;
+    margin-right: 60px;
     opacity: 0.5;
     transition: 0.3s ease-in-out;
     width: 22px;
@@ -1026,6 +1041,13 @@ textarea{
     }
     
 }
+
+@media (max-width: 930px){
+    .title-text-box{
+        margin-bottom: calc(40px * ((100vw - 260px) / (930px - 260px)));
+    }
+}
+
 
 @media (max-width: 700px) {
     .me-img{
