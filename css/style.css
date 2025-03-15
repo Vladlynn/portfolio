@@ -67,7 +67,7 @@ body {
 ::-webkit-scrollbar {
     width: 0px;
 }
-#scrollpath{
+/* #scrollpath{
     position: fixed;
     top: 0;
     right: 0;
@@ -75,7 +75,7 @@ body {
     height: 100%;
     background: rgba(255,255,255,0.05);
     z-index: 105;
-}
+} */
 
 #progressbar{
     position: fixed;
@@ -84,7 +84,7 @@ body {
     width: 10px;
     background: linear-gradient(to top, #008aff, #00ffe7);
     animation: animate 5s linear infinite;   
-    z-index: 106;
+    z-index: 3;
 }
 
 @keyframes animate{
@@ -1096,9 +1096,9 @@ textarea{
         gap: 2rem;
         left: 0px;
         top: -100%;
-        width: calc(100vw - 16px);
+        width: 100vw;
         height: 100%;
-        z-index: 3;
+        z-index: 4;
         
     }
 
