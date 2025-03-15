@@ -178,6 +178,14 @@
   
 }
 
+@media screen and (max-width: 391px) and (max-height: 787px) {
+  .main-page-neon-text{
+    top: 15vh;
+  }
+  .about-me-neon-text{
+    top: 10vh;
+  }
+}
 
 @media (max-width: 314px){
   .main-page-neon-text{
