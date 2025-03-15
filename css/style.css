@@ -294,7 +294,6 @@ nav{
 }
 
 .hello-text p{
-    margin-top: 15px;
     max-width: 500px;
     
 }
@@ -478,7 +477,7 @@ svg path {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    width: calc(100vw - 16px);    
+    width: calc(100vw - 10px);    
     position: relative; 
     background-color: var(--background-color-second);
     
@@ -488,7 +487,7 @@ svg path {
    
     position: absolute;
     left: 0;
-    width: calc(100vw - 16px);
+    width: calc(100vw - 10px);
     height: 60px;
 
     background: var(--background-color);
@@ -857,7 +856,7 @@ svg path {
 
 /* CONTACT PAGE ================================    */
 .contact-page{
-    width: calc(100vw - 16px);
+    width: calc(100vw - 10px);
     height: 100vh;
     position: relative;
     display: flex;
@@ -876,7 +875,7 @@ svg path {
 
 .background-gradient{
     position: absolute;
-    width: calc(100vw - 16px);
+    width: calc(100vw - 10px);
     left: 0;
     height: 60px;
     top: -58px;
@@ -1044,7 +1043,7 @@ textarea{
 
 @media (max-width: 930px){
     .title-text-box{
-        margin-bottom: calc(40px * ((100vw - 260px) / (930px - 260px)));
+        margin-bottom: calc(3.75rem + ((1vw - 6.5px) * -5.3571));
     }
 }
 
@@ -1117,6 +1116,12 @@ textarea{
     }
 
   
+}
+
+@media (max-width: 660px){
+    .title-text-box{
+        margin-bottom: calc(2.8125rem + ((1vw - 2.6px) * -6.25));
+    }
 }
 
 
