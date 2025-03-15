@@ -801,10 +801,14 @@ svg path {
     padding: 20px;
     color: black;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    /* transition: 1s ease-in-out; */
     font-family: 'Alro';
     font-weight: normal;
     
+}
+
+.inner-text:hover{
+    opacity: 1;
 }
 
 .inner-text-wrapper{
@@ -821,8 +825,12 @@ svg path {
     -webkit-backdrop-filter: blur(20px);
     border-radius: 15px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-
     padding: 20px;
+    transition: 2s ease-in-out;
+
+    
+    
+    
 }
 
 .inner-text-wrapper h4{
@@ -837,9 +845,7 @@ svg path {
     text-align: center;
 }
 
-.inner-text:hover{
-    opacity: 1;
-}
+
 
 .view-link{
     text-transform:  uppercase;
