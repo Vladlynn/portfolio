@@ -1,5 +1,9 @@
+body {
+    background-color: var(--background-color);
+    overflow-x: hidden;
+}
 
-.preloader{
+/* .preloader{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,14 +30,7 @@
 
 .hidden {
     display: none;
-}
-
-
-
-body {
-    background-color: var(--background-color);
-    overflow-x: hidden;
-}
+} */
 
 
 .regular-text,
@@ -53,9 +50,6 @@ body {
 .light-mode{
     z-index: 2;
 }
-
-
-
 
   
 .bg {
