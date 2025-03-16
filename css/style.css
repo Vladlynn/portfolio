@@ -1,6 +1,33 @@
-/* * {
-    outline: 1px solid red;
-} */
+
+.preloader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    
+}
+.loader {
+    width: 60px;
+    aspect-ratio: 4;
+    --_g: no-repeat radial-gradient(circle closest-side,var(--text-color) 90%,rgba(249, 5, 5, 0));
+    background: 
+        var(--_g) 0%   50%,
+        var(--_g) 50%  50%,
+        var(--_g) 100% 50%;
+    background-size: calc(100%/3) 100%;
+    animation: l7 1s infinite linear;
+}
+@keyframes l7 {
+    33%{background-size:calc(100%/3) 0%  ,calc(100%/3) 100%,calc(100%/3) 100%}
+    50%{background-size:calc(100%/3) 100%,calc(100%/3) 0%  ,calc(100%/3) 100%}
+    66%{background-size:calc(100%/3) 100%,calc(100%/3) 100%,calc(100%/3) 0%  }
+}
+
+.hidden {
+    display: none;
+}
+
 
 
 body {
@@ -29,7 +56,7 @@ body {
 
 
 
-/* SEPIA */
+
   
 .bg {
     position: fixed;
@@ -62,20 +89,12 @@ body {
     100% { transform: translate(5%,0) }
 }
 
-/* =====SCROLL BAR====================================== */
+
 
 ::-webkit-scrollbar {
     width: 0px;
 }
-/* #scrollpath{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 10px;
-    height: 100%;
-    background: rgba(255,255,255,0.05);
-    z-index: 105;
-} */
+
 
 #progressbar{
     position: fixed;
@@ -119,7 +138,7 @@ body {
 
 
 
-/* ============================================ */
+
 
 .home-page{
     display: flex;
@@ -142,7 +161,7 @@ body {
 
 
 
-/* NEON CIRCLE ======================== */
+
 @keyframes flicker {
     0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
         box-shadow:
@@ -178,19 +197,17 @@ body {
 
     opacity: 0.9;
     
-    /* Добавляем анимацию */
+    
     animation: flicker 1.5s infinite alternate;
     
 }
 
 
 
-
-/* ================================================================= */
 .me-img{
     position: absolute;
 
-    /* margin-right: clamp(1px, calc(0.0625rem + ((1vw - 19.2px) * -40.6395)), 700px); */
+    
     min-height: 0vw;
 
     max-height: auto;
@@ -198,7 +215,7 @@ body {
     z-index: -1;
 }
 
-/* .container-4pages{height: 400vh; width: calc(100vw - 16px); } */
+
 header{height: 10vh; width: calc(100vw - 16px); }
 main{height: 80vh; width: calc(100vw - 16px); }
 footer{height: 10vh; width: calc(100vw - 16px); }
@@ -229,7 +246,7 @@ nav{
     
 }
 
-/* link hover */
+
 .link-hover{
     position: relative;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -261,7 +278,7 @@ nav{
     
     background-color: var(--text-color);
 }
-/* ============================================= */
+
 
 
 
@@ -291,7 +308,7 @@ nav{
     background: rgba(255, 255, 255, 0.2); 
     backdrop-filter: blur(5px); 
     -webkit-backdrop-filter: blur(20px);
-    /* border-radius: 15px;  */
+   
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
@@ -399,7 +416,7 @@ nav{
 
 
 
-/* LOGO======================================== */
+
 .logo-wrapper{
     display: flex;
     flex-direction: column;
@@ -419,7 +436,7 @@ svg path {
 
 
 
-/* ===BURGER MENU ======== */
+
 
 .hamburger {
     cursor: pointer;
@@ -434,13 +451,13 @@ svg path {
 
 .hamburger path {
     stroke: var(--text-color);
-    stroke-width: 2; /* Опционально, толщина линии */
+    stroke-width: 2; 
 }
   
 .hamburger svg {
-    /* The size of the SVG defines the overall size */
+    
     height: 3em;
-    /* Define the transition for transforming the SVG */
+    
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
@@ -450,7 +467,7 @@ svg path {
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 3;
-    /* Define the transition for transforming the Stroke */
+   
     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
                 stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -472,7 +489,7 @@ svg path {
 
 
 
-/* ===============ABOUT ME PAGE ===================== */
+
 .about-me-page{
     display: flex;
     flex-direction: column;
@@ -510,16 +527,6 @@ svg path {
 
 
 
-    /* glassmorphism */
-
-/*     background: rgba(255, 255, 255, 0.2); 
-    backdrop-filter: blur(5px); 
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 15px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
-*/
-   
-
 
 .about-me-text{
     max-width: 800px; 
@@ -539,7 +546,7 @@ svg path {
 
 
 
-/* AUTO CAROUSEL */
+
 .autoplay-carousel{
     width: min(1200px, 95vw);
     margin: auto;
@@ -552,9 +559,7 @@ svg path {
 
 }
 
-/* .autoplay-carousel-reverse{
-    transform: rotate(8deg);
-} */
+
 
 .slider{
     width: 100%;
@@ -631,8 +636,6 @@ svg path {
 
 }
 
-
-/* ==== PORTFOLIO PAGE ================ */
 
 .portfolio-page{
     position: relative;
@@ -801,7 +804,7 @@ svg path {
     padding: 20px;
     color: black;
     opacity: 0;
-    /* transition: 1s ease-in-out; */
+
     font-family: 'Alro';
     font-weight: normal;
     
@@ -826,11 +829,7 @@ svg path {
     border-radius: 15px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     padding: 20px;
-    transition: 2s ease-in-out;
-
-    
-    
-    
+    transition: 2s ease-in-out;  
 }
 
 .inner-text-wrapper h4{
@@ -862,7 +861,7 @@ svg path {
 
 
 
-/* CONTACT PAGE ================================    */
+
 .contact-page{
     width: 100vw;
     height: 100vh;
@@ -871,13 +870,6 @@ svg path {
     justify-content: center;
     background-color: var(--background-color-second);
 
-    
-    
-
-/*     background: linear-gradient(to bottom, #262626 0%, #2B2B2B 40%, #121212 150%), 
-    linear-gradient(to top, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.35) 200%);
-
-    background-blend-mode: multiply; */
 }
 
 
@@ -923,14 +915,9 @@ form{
 form input,
 textarea{
     border: 2px solid var(--text-color);
-    /* background-color: var(--background-color) !important;  */
+    
     color: var(--text-color);
     background-color: transparent;
-    /* background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
-    background-blend-mode: multiply; */
-
-   
-
 }
 
 .name:focus-within,
@@ -970,7 +957,6 @@ textarea{
 
 
 
-/* =======================MEDIA QUERIES======================= */
 @media (max-width: 1200px){
 
     .gallery-graphic-flex,
@@ -1066,8 +1052,7 @@ textarea{
     .neon-circle{
         width: calc(25rem + ((1vw - 2.5px) * 66.6667));
         height: calc(25rem + ((1vw - 2.5px) * 66.6667));
-/*         left: 50%;
-        transform: translateX(-50%); */
+
     }
 
     .hamburger {
