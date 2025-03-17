@@ -25,7 +25,7 @@ jobs:
           fi
 
       - name: Создаем config.js с API-ключом
-        run: echo "const API_KEY = '${{ secrets.WEB3FORMS_ACCESS_KEY }}';" > git/config.js
+        run: echo "const API_KEY = '${{ secrets.WEB3FORMS_ACCESS_KEY }}';" > config.js
 
       - name: Сборка проекта (если используется сборщик)
         run: |
