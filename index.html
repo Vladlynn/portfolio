@@ -287,7 +287,7 @@
                     <div class="form-title"><h2 class="neon-text">Contact With Me</h2></div>
                     
                     <form action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="69a04d66-9629-4813-937c-8971eb6ca3b4"> <!--web3forms access key -->
+                        <input type="hidden" name="access_key" id="access_key">
                         <input class="name" type="text" name="name" id="name" placeholder="Your Name">
                         <input class="email" type="email" name="email" id="email" placeholder="Your Email">
 
@@ -324,16 +324,7 @@
     <div class="scroll-up"><i class="ri-arrow-up-box-fill"></i></div>
     
 
-
-    <script>
-        var audio = document.getElementById('background-audio');
-        audio.play().catch(function(error) {
-          console.log("Error playing audio: ", error);
-        });
-    </script>
-
-
-
+    <script src="config.js"></script>
     <script src="./js/theme.js"></script>
     <script src="./js/burger.js"></script>
     

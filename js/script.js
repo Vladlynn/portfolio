@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("access_key").value = API_KEY;
+});
+
 var typed = new Typed(".input",{
     strings:["Vlad Lynn.", "Web Developer.","UI/UX Designer.","3D Artist."],
     typedSpeed: 70,
