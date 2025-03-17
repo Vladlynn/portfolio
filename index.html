@@ -14,14 +14,19 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/theme.css">
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Sacramento&display=swap" rel="stylesheet">
+
+    <link rel="preload" as="image" href="img/me-dark.avif" type="image/avif">
+
+    
 
 </head>
 <body>
@@ -33,7 +38,8 @@
         <div class="home-page" id="home-page">
             <div class="neon-circle"></div>
             <div class="home-img-wrapper">
-                <img class="me-img" src="img/me-dark.avif" alt="me" loading="lazy">
+                <img class="me-img" src="img/me-dark.avif" alt="me" fetchpriority="high">
+
             </div>
             
             <header>
@@ -107,7 +113,7 @@
     
                         <div class="music">
                             <button class="volume"><i class="ri-volume-up-fill"></i></button>
-                            <audio autoplay>
+                            <audio autoplay id="background-audio">
                                 <source src="sound/untitled.mp3" type="audio/mp3">
                             </audio>
                         </div>
@@ -317,15 +323,14 @@
 
     <div class="scroll-up"><i class="ri-arrow-up-box-fill"></i></div>
     
-        
-   
-    
 
 
-
-
-
-
+    <script>
+        var audio = document.getElementById('background-audio');
+        audio.play().catch(function(error) {
+          console.log("Error playing audio: ", error);
+        });
+    </script>
 
 
 
