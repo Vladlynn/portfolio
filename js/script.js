@@ -1,11 +1,3 @@
-/* window.onload = function() {
-    setTimeout(() => {
-        document.getElementById("preloader").style.display = "none"; 
-        document.getElementById("content").classList.remove("hidden"); 
-    }, 3000); 
-}; */
-
-
 var typed = new Typed(".input",{
     strings:["Vlad Lynn.", "Web Developer.","UI/UX Designer.","3D Artist."],
     typedSpeed: 70,
