@@ -1,4 +1,4 @@
-const accessKey = process.env.REACT_APP_ACCESS_KEY;
+
 
 
 var typed = new Typed(".input",{
