@@ -1,6 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("access_key").value = API_KEY;
-});
+const accessKey = process.env.REACT_APP_ACCESS_KEY;
+
 
 var typed = new Typed(".input",{
     strings:["Vlad Lynn.", "Web Developer.","UI/UX Designer.","3D Artist."],
