@@ -13,28 +13,16 @@ jobs:
       - name: Checkout репозитория
         uses: actions/checkout@v3
 
-      - name: Установка Node.js
+      - name: Установка Node.js (если нужно)
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
-      - name: Установка зависимостей (если есть package.json)
-        run: |
-          if [ -f package.json ]; then
-            npm install
-          fi
-
       - name: Создаем config.js с API-ключом
         run: echo "const API_KEY = '${{ secrets.WEB3FORMS_ACCESS_KEY }}';" > config.js
-
-      - name: Сборка проекта (если используется сборщик)
-        run: |
-          if [ -f package.json ]; then
-            npm run build
-          fi
 
       - name: Деплой на GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist 
+          folder: .  # Деплоим корень проекта
